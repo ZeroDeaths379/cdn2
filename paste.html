@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Image Hoster</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Upload</a>
+      <a href="/paste">Paste</a>
+     <a href="https://cloudbin.z-ro.ml">Bin</a>
+      <a href="https://z-ro.ml/">Linkshortener</a>
+     <a href="https://mail.z-ro.ml/">TempMail</a>
+        <a href="https://ip.orion0.repl.co/">IP Grabber</a>
+      <a href="https://cloudpad.orion0.repl.co/">CloudPad</a>
+      <a href="https://secret.z-ro.ml/">Secret</a>
+      
+    </nav>
+    <main>
+
+    <button class="pasteprompt">Click here and paste</button>
+    <h1>Preview</h1>
+    <div contenteditable="true" class="paste"></div>
+    <button class="reset" hidden>Reset</button>
+    <form method="POST" action="/upload_paste">
+      <input name="url" class="data" hidden required>   
+      <br>
+      <button type="submit">Upload</button>
+    </form>
+    
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
